@@ -50,4 +50,16 @@ function addBobAnimationToElement(el, coord) {
   return el
 }
 
-createSphere()
+function createSpheres() {
+  x = 4
+  while (x > 0) {
+    setTimeout(() => {
+      let [el, coords] = createSphere()
+      el = addBobAnimationToElement(el, coords)
+      addEntityToScene(el)
+    }, Math.random() * 2500)
+    x--
+  }
+}
+
+createSpheres()
