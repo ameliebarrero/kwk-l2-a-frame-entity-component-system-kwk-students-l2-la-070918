@@ -49,3 +49,5 @@ function addBobAnimationToElement(el, coord) {
   el.appendChild(newAnim)
   return el
 }
+
+createSphere()
